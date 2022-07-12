@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/zefiro1/404-Not-found-dev.github.io">
       Solution
     </a>
     <span> | </span>
