@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Space+Mono&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#grid-container{
+    display: grid;
+    
+    grid-template: "title"
+                    "image"
+                    "sub-title"
+                    "paragraph"
+                    "button"
+                    "footer";
+}
+#title{
+    grid-area: title;
+
+}
+#title h1{
+    padding: 20px 24px;
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #333;
+  
+    text-transform: uppercase;
+    letter-spacing: -0.08em;
+
+}
+#image{
+    grid-area: image;
+
+    width: 76.487955729167vw;
+    margin: 64px auto;
+    
+}
+img{
+ 
+    max-width: 100%;
+}
+#sub-title{
+    grid-area: sub-title;
+ 
+    margin-bottom: 30px;
+}
+h2{
+    padding-left: 24px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.035em;
+    font-size: 3rem;
+    
+}
+#paragraph{
+    grid-area: paragraph;
+    width: 328px;
+    height: 81px;
+    margin-bottom: 60px;
+    margin-left: 23px;
+}
+p{
+
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.035em;
+    font-size: 1.125rem;
+}
+#button{
+    grid-area: button;
+    padding-left: 24px;
+}
+a{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    font-size: 0.875rem;
+    background: #333;
+    padding: 24px 43px;
+    margin-bottom: 114px;
+}
+#footer{
+    grid-area: footer;  
+    text-align: center;
+   margin-bottom: 24px;
+}
+#footer p{
+ 
+    display: contents;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    color: #BDBDBD;
+   
+    font-stretch: 0.875rem;
+    
+
+}
+@media only screen and (min-width: 768px){
+    #grid-container{
+        grid-template: "title title" 200px
+                        "image sub-title"
+                        "image paragraph"
+                        "image button"
+                        "footer footer"
+                       ;                                           
+        
+    }
+    #paragraph{
+        width: 381px;
+        height: 108px;
+        margin-bottom: 64px;
+        margin-left: 0;
+    }
+ 
+    #image{
+        width:  37.446089850532vw;
+    }
+    img{
+    
+       max-width: 100%;
+        
+    }
+    h2{
+        font-size: 4rem;
+        width: 586px;
+        margin-right: 119px;
+        margin-bottom: 36px;
+        padding: 0;
+    }
+    p{
+        font-size: 1.5rem;
+        
+    }
+    #button {
+        padding: 0;
+        margin-bottom: 308px;
+    }
+    #title h1{
+        padding: 40px 77px;
+
+        }
+}
